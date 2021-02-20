@@ -16,7 +16,7 @@ def subsetproblem(arr,W,n):
                     t[i][j] =  t[i-1][j-arr[i-1]] + t[i-1][j]
     return t[n][W]
 
-arr = [2,3,5,6,8,10,12]
+arr = [2,3,5,6,8,10]
 W = 10
 n = len(arr)
 t = [[0 for i in range(W+1)] for j in range(n+1)]
